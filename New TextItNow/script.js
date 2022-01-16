@@ -7,7 +7,7 @@ function onSignIn(googleUser) {
     // document.querySelector(".g-signin2").style.display = "none"
     const allowedEmailDomain = 'student.tdsb.on.ca';
 
-    const email = 'test@admin.com';
+    const email = profile.getEmail();
 
     if (email.split('@')[1] === allowedEmailDomain) {
         alert("we allow this email")
