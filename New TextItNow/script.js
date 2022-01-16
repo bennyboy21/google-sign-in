@@ -1,7 +1,7 @@
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
-    document.getElementById("name").textContent(profile.getName())
-    document.getElementById("email").textContent(profile.getEmail())
+    document.getElementById("name").innerHTML(profile.getName())
+    document.getElementById("email").innerHTML(profile.getEmail())
     document.getElementById("image").setAttribute("src", profile.getImageUrl())
     
     console.log(profile)
